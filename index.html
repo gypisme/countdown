@@ -8,13 +8,13 @@
 		function starttime(){
 			var date = new Date();
 			var now = date.getTime();
-			//设置截止时间  
+			//设置截止时间  a
 			
 			var str=date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate()+" 18:00:00";
 			var endDate = new Date(str); 
 			var end = endDate.getTime();  
 			
-			//时间差  
+			//时间差  b
 			var leftTime = end-now; 
 			//定义变量 d,h,m,s保存倒计时的时间  
 			var d,h,m,s;  
@@ -24,7 +24,7 @@
 				m = Math.floor(leftTime/1000/60%60);  
 				s = Math.floor(leftTime/1000%60);                     
 			}  
-			//将倒计时赋值到div中  
+			//将倒计时赋值到div中  c
 			// document.getElementById("_d").innerHTML = d+"天";  
 			document.getElementById("_h").innerHTML = h+"小时";  
 			document.getElementById("_m").innerHTML = m+"分";  
